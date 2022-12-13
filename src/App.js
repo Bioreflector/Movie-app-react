@@ -1,9 +1,17 @@
-import "./App.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
+import { URL_DEFAULT, URL_GANRES, API_KEY, URL_IMAGES } from './config'
+import './App.css'
 
 function App() {
-  return <div className="App">
+  const [genres, setGanres] = useState([])
+  useEffect(() => {
+    fetch(`${URL_GANRES}${API_KEY}`).then((response) =>
+      response.json().then((genres) => setGanres(genres.genres))
+    )
+  }, [])
 
-  </div>;
+  return <div className="App"></div>
 }
 
-export default App;
+export default App
