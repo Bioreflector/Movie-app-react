@@ -6,7 +6,7 @@ function Menu() {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">MoviesPage</Link>
         </li>
         <li>
           <Link to="/watchlist">WatchList</Link>
