@@ -3,9 +3,9 @@ import Menu from './Menu'
 import styles from './Header.module.css'
 import { useState } from 'react'
 function Header() {
-  const [isScroling, setIsScroling] = useState(false)
+  const [isScroling, setIsScroling] = useState(0)
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = () => {
       setIsScroling(window.scrollY)
     }
     window.addEventListener('scroll', handleScroll)

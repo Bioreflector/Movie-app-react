@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './Menu.module.css'
 
 function Menu() {
   return (
-    <nav>
+    <nav className={styles.menu}>
       <ul>
-        <li>
+        <li >
           <Link to="/">MoviesPage</Link>
         </li>
         <li>
