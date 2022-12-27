@@ -16,12 +16,14 @@ function App() {
       response.json().then((genres) => setGanres(genres.genres))
     )
   }, [])
+  console.log(movies)
   useEffect(() => {
     fetch(`${URL_DEFAULT}/movie/top_rated${API_KEY}`).then((response) =>
       response.json().then((movie) => setMovies(movie))
     )
   }, [])
 
+  
   return (
     <BrowserRouter>
       <div className="App">

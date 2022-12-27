@@ -1,9 +1,20 @@
-import Menu from "./Menu"
+import { useEffect } from 'react'
+import Menu from './Menu'
+import styles from './Header.module.css'
+import { useState } from 'react'
 function Header() {
+  const [isScroling, setIsScroling] = useState(false)
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setIsScroling(window.scrollY)
+    }
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+  console.log(isScroling)
   return (
-    <header>
-      <h1>Movie Appp</h1>
-        <Menu/>
+    <header className={isScroling ? `${styles.header} ${styles.hide}`:`${styles.header}`}>
+      <h1>Movie App</h1>
+      <Menu />
     </header>
   )
 }

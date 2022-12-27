@@ -1,1 +1,11 @@
+.App {
+  max-width: 1320px;
+  padding: 80px 5px 0 5px;
 
+  margin: 0 auto;
+}
+.movieContainer {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 15px;
+}
