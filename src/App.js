@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<MoviesPage  movies = {movies} setMovies={setMovies} genres={genres}/>} />
-            <Route path='/:title' element={<AboutMovie movies={movies}/>}/>
+            <Route path='/:title' element={<AboutMovie movies={movies} genres={genres}/>}/>
             <Route path="watchlist" element={<WatchList />} />
           </Route>
         </Routes>
