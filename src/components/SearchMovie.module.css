@@ -29,6 +29,9 @@
   font-size: 16px;
   border-radius: 30px;
 }
+.formSearch button:hover {
+ background-color: rgba(0, 0, 0, 0.849);
+}
 .serchIcon {
   margin-right: 7px;
 }

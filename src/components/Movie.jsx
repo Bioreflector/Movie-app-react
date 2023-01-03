@@ -21,7 +21,7 @@ function Movie(props) {
         </ul>
       <div>Raiting {movie.vote_average}</div>
       <div className={styles.cardActionBox}>
-      <Link to={`/${movie.title}`} className={styles.cardLink}>About movie</Link>
+      <Link to={`/${movie.id}`} className={styles.cardLink}>About movie</Link>
       <Button>Add Watch List</Button>
       </div>
         

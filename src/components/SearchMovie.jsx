@@ -6,6 +6,7 @@ function SearchMovie({ setMovies }) {
   const [text, setText] = useState('')
   const getSearchMovie = (e) => {
     e.preventDefault()
+    setText('')
     console.log(e)
   }
   console.log(text)
