@@ -7,10 +7,11 @@ import styles from './WatchList.module.css'
 function WatchList() {
   const value = useContext(Context)
   const { watchList } = value
+  const numbersOfMovie = watchList.length
   return (
     <div className={styles.watchList}>
       <h2>Watch List</h2>
-
+      <div className={styles.statusWatclist}>{numbersOfMovie ===0 ? 'Watch list is epty' : `Watch list has ${numbersOfMovie} ${numbersOfMovie > 1 ? 'movies':'movie'}` }</div>
       <ul>
         {watchList.map((movie) => {
           return (

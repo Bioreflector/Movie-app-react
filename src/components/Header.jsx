@@ -12,7 +12,7 @@ function Header() {
   }, [])
 
   return (
-    <header className={scrol ? `${styles.header} ${styles.hide}`:`${styles.header}`}>
+    <header className={scrol > 0 ? `${styles.header} ${styles.hide}`:`${styles.header}`}>
       <h1>Movie App</h1>
       <Menu />
     </header>

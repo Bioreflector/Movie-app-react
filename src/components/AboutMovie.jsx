@@ -15,7 +15,6 @@ function AboutMovie() {
       .then((movie) => setMovie(movie))
   }, [id])
 
-
   if (movie) {
     const { genres } = movie
     return (
