@@ -1,0 +1,30 @@
+.watchList ul {
+  list-style: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.watchList h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.watchList ul li {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.actionBox {
+  display: flex;
+  gap: 10px;
+}
+.actionBox a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(31, 3, 54);
+    border-radius: 5px;
+    color: white;
+}

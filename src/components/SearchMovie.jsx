@@ -7,9 +7,8 @@ function SearchMovie({ setMovies }) {
   const getSearchMovie = (e) => {
     e.preventDefault()
     setText('')
-    console.log(e)
+    
   }
-  console.log(text)
   return (
     <form action="" className={styles.formSearch}>
       <input
@@ -17,7 +16,7 @@ function SearchMovie({ setMovies }) {
         placeholder="Search movie"
         onChange={(e) => setText(e.target.value)}
       />{' '}
-      <button type="sumbit" onClick={(e) => getSearchMovie(e)}>
+      <button type="sumbit" onClick={(e) => getSearchMovie(e)} disabled={text.length > 2 ? false : true}>
         <BiSearch className={styles.serchIcon} />
         Search
       </button>

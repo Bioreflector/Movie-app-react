@@ -4,9 +4,7 @@ import styles from './AboutMovie.module.css'
 import Button from '../UI/Button'
 import { useState } from 'react'
 import { useEffect } from 'react'
-function AboutMovie(props) {
-  const { addToWatchList, deleteFromWatchList, isWatchlistIncludesMovie } =
-    props
+function AboutMovie() {
   const params = useParams()
   const { id } = params
   const [movie, setMovie] = useState(null)
@@ -39,14 +37,7 @@ function AboutMovie(props) {
               <Link to="/" className={styles.linkHome}>
                 Go Home
               </Link>
-              <Button
-                onClick={() =>
-                  isWatchlistIncludesMovie(id)
-                    ? deleteFromWatchList(id)
-                    : addToWatchList(movie)
-                }>
-                {isWatchlistIncludesMovie(id) ? 'remove' : 'Add Watch List'}
-              </Button>
+              <Button id={movie.id} title={movie.title}/>
             </div>
             <div className={styles.releaseAndRaitingBox}>
               <div className={styles.releaseDate}>

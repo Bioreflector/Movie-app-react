@@ -22,7 +22,7 @@ function Movie(props) {
       <div>Raiting {movie.vote_average}</div>
       <div className={styles.cardActionBox}>
       <Link to={`/${movie.id}`} className={styles.cardLink}>About movie</Link>
-      <Button>Add Watch List</Button>
+      <Button id={movie.id} title={movie.title}>Add Watch List</Button>
       </div>
         
       </div>

@@ -30,7 +30,10 @@
   border-radius: 30px;
 }
 .formSearch button:hover {
- background-color: rgba(0, 0, 0, 0.849);
+ background-color: rgb(107, 22, 22);
+}
+.formSearch button:disabled{
+  background-color: rgba(0, 0, 0, 0.548);
 }
 .serchIcon {
   margin-right: 7px;
@@ -56,3 +59,4 @@
     border-radius: 30px;
   }
 }
+
